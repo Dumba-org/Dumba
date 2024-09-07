@@ -91,7 +91,7 @@ class _HomescreenState extends State<Homescreen> {
                       children: [
                         Expanded(
                           child: Card(
-                            color: primaryColor,
+                            color: backgroundColor,
                             elevation: 5,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -132,7 +132,7 @@ class _HomescreenState extends State<Homescreen> {
                                   height:
                                       180, // Increased height to accommodate larger image
                                   child: Card(
-                                    color: primaryColor,
+                                    color: backgroundColor,
                                     elevation: 2,
                                     child: Padding(
                                       padding: const EdgeInsets.all(8.0),
@@ -185,7 +185,7 @@ class _HomescreenState extends State<Homescreen> {
                                 height:
                                     180, // Increased height to accommodate larger image
                                 child: Card(
-                                  color: primaryColor,
+                                  color: backgroundColor,
                                   elevation: 2,
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),

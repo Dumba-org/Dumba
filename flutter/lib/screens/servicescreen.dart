@@ -12,13 +12,13 @@ class ServiceListPage extends StatelessWidget {
     {
       'name': 'Blood Donation',
       'icon': Icons.bloodtype,
-      'image': 'assets/images/blood.png',
+      'image': 'assets/images/blooddonation.png',
       'route': BloodDonationPage(),
     },
     {
       'name': 'Ambulance Tracking',
       'icon': Icons.local_shipping,
-      'image': 'assets/images/ambulance.png',
+      'image': 'assets/images/ambulance.jpg',
       'route': AmbulanceTrackingPage(),
     },
     {

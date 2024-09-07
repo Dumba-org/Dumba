@@ -6,35 +6,35 @@ class HospitalGridScreen extends StatelessWidget {
   final List<Map<String, String>> hospitals = [
     {
       "name": "Bir Hospital, Kantipath, Kathmandu",
-      "imageUrl": "assets/hospitals.png"
+      "imageUrl": "assets/hospitals/bir.jpg"
     },
     {
       "name": "Teaching Hospital, Maharajgunj, Kathmandu",
-      "imageUrl": "assets/hospitals.png"
+      "imageUrl": "assets/hospitals/teaching.jpg"
     },
     {
       "name": "Kanti Children’s Hospital, Maharajgunj, Kathmandu",
-      "imageUrl": "assets/hospitals.png"
+      "imageUrl": "assets/hospitals/kanti.jpg"
     },
     {
       "name": "Nepal Cancer Hospital, Harisiddhi, Lalitpur",
-      "imageUrl": "assets/hospitals.png"
+      "imageUrl": "assets/hospitals/cancer.jpg"
     },
     {
       "name": "Grande Hospital, Tokha, Kathmandu",
-      "imageUrl": "assets/hospitals.png"
+      "imageUrl": "assets/hospitals/grande.jpg"
     },
     {
       "name": "B&B Hospital, Gwarko, Lalitpur",
-      "imageUrl": "assets/hospitals.png"
+      "imageUrl": "assets/hospitals/bnb.jpg"
     },
     {
       "name": "Dhulikhel Hospital, Kavrepalanchowk",
-      "imageUrl": "assets/hospitals.png"
+      "imageUrl": "assets/hospitals/dhulikhel.jpg"
     },
     {
       "name": "Norvic Hospital, Thapathali, Kathmandu",
-      "imageUrl": "assets/hospitals.png"
+      "imageUrl": "assets/hospitals/norvic.jpg"
     }
   ];
 
