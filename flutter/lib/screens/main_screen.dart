@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:rekhdekh/screens/appointment.dart';
+import 'package:rekhdekh/screens/articles.dart';
+import 'package:rekhdekh/screens/chatScreen.dart';
 import 'package:rekhdekh/screens/homescreen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -11,10 +14,11 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
   final _screens = [
-    Homescreen(),
+    const Homescreen(),
+    const ArticleScreen(),
+    Oppointment(0),
     Container(),
-    Container(),
-    Container(),
+    MessagesScreen(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -43,9 +47,13 @@ class _MainScreenState extends State<MainScreen> {
             icon: Icon(Icons.calendar_month_outlined),
             label: 'appointment',
           ),
-           BottomNavigationBarItem(
-            icon: Icon(Icons.calendar_month_outlined),
-            label: 'Service',
+          BottomNavigationBarItem(
+            icon: Icon(Icons.medical_services_outlined),
+            label: 'services',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat_bubble),
+            label: 'Contact',
           ),
         ],
         currentIndex: _selectedIndex,

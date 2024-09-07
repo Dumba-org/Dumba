@@ -114,6 +114,7 @@ class _HomescreenState extends State<Homescreen> {
                         ),
                         //card for hospital and blood bank
                         const SizedBox(width: 20),
+
                         Column(
                           children: [
                             Expanded(
@@ -225,7 +226,7 @@ class _HomescreenState extends State<Homescreen> {
                     ),
                   ),
                   const SizedBox(height: 20),
-
+               //  Image.network('http://192.168.0.100:8000/video_feed'),
                   //feature doctors
                   Row(
                     children: [
@@ -302,41 +303,46 @@ class _HomescreenState extends State<Homescreen> {
                   const SizedBox(height: 20),
 
                   //GridView for services which contain image and text
-                  GridView.builder(
-                    shrinkWrap: true,
-                    physics: const NeverScrollableScrollPhysics(),
-                    itemCount: 5,
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 4,
-                      crossAxisSpacing: 10,
-                      mainAxisSpacing: 10,
-                    ),
-                    itemBuilder: (context, index) {
-                      return Card(
-                        elevation: 3,
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              // CircleAvatar for the image
-                              CircleAvatar(
-                                radius: 20, // Adjust the size of the avatar
-                                backgroundImage: AssetImage(catImages[index]),
-                              ),
-                              const SizedBox(
-                                  height:
-                                      10), // Spacing between image and text
-                              Text(
-                                catNames[index],
-                                style: const TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 14),
-                              ),
-                            ],
+                  SizedBox(
+                    height: 200,
+                    child: GridView.builder(
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      itemCount: 5,
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 4,
+                        crossAxisSpacing: 10,
+                        mainAxisSpacing: 10,
+                      ),
+                      itemBuilder: (context, index) {
+                        return Card(
+                          elevation: 3,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                // CircleAvatar for the image
+                                CircleAvatar(
+                                  radius: 10, // Adjust the size of the avatar
+                                  backgroundImage: AssetImage(catImages[index]),
+                                ),
+                                const SizedBox(
+                                    height:
+                                        5), // Spacing between image and text
+                                Text(
+                                  catNames[index],
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 10),
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                      );
-                    },
+                        );
+                      },
+                    ),
                   ),
                 ],
               ),
