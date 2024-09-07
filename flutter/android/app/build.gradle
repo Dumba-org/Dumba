@@ -1,0 +1,43 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id 'com.google.gms.google-services'
+}
+
+def flutterVersionCode = project.hasProperty('flutter.versionCode') ? project.property('flutter.versionCode').toInteger() : 1
+def flutterVersionName = project.hasProperty('flutter.versionName') ? project.property('flutter.versionName') : "1.0.0"
+
+android {
+    namespace = "com.example.rekhdekh"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.rekhdekh"
+        minSdk = 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutterVersionCode
+        versionName = flutterVersionName
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}

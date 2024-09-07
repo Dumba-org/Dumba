@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "493048497325",
+    "project_id": "doctor-app-8ecc3",
+    "storage_bucket": "doctor-app-8ecc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493048497325:android:dc188cfc8c661464d5b224",
+        "android_client_info": {
+          "package_name": "com.example.rekhdekh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe1oA-K35ognxDSgKz4WnILa7YniiRluk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
