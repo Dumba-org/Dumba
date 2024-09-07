@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rekhdekh/screens/hospital.dart';
 import 'package:rekhdekh/widgets/color.dart';
 
 class Homescreen extends StatefulWidget {
@@ -118,51 +119,60 @@ class _HomescreenState extends State<Homescreen> {
                         Column(
                           children: [
                             Expanded(
-                              child: Container(
-                                width: 180,
-                                height:
-                                    180, // Increased height to accommodate larger image
-                                child: Card(
-                                  color: primaryColor,
-                                  elevation: 2,
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Row(
-                                      mainAxisAlignment: MainAxisAlignment
-                                          .spaceBetween, // Space between text and image
-                                      crossAxisAlignment: CrossAxisAlignment
-                                          .center, // Center vertically
-                                      children: [
-                                        // Left side: Text widgets
-                                        const Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          crossAxisAlignment: CrossAxisAlignment
-                                              .start, // Align text to start (left)
-                                          children: [
-                                            Text('Hospitals',
-                                                style: TextStyle(fontSize: 16)),
-                                            SizedBox(
-                                                height:
-                                                    5), // Spacing between text elements
-                                            Text('only seat booking',
-                                                style: TextStyle(fontSize: 12)),
-                                          ],
-                                        ),
-                                        // Right side: Image widget
-                                        Flexible(
-                                          child: Container(
-                                            margin: const EdgeInsets.only(
-                                                left:
-                                                    10), // Margin between text and image
-                                            height:
-                                                120, // Set desired height for the image
-                                            // Set desired width for the image
-                                            child: Image.asset(
-                                                'assets/hospitals.png'),
+                              child: GestureDetector(
+                                  onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => HospitalGridScreen()),
+                                );
+                              },
+                                child: Container(
+                                  width: 180,
+                                  height:
+                                      180, // Increased height to accommodate larger image
+                                  child: Card(
+                                    color: primaryColor,
+                                    elevation: 2,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment
+                                            .spaceBetween, // Space between text and image
+                                        crossAxisAlignment: CrossAxisAlignment
+                                            .center, // Center vertically
+                                        children: [
+                                          // Left side: Text widgets
+                                          const Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            crossAxisAlignment: CrossAxisAlignment
+                                                .start, // Align text to start (left)
+                                            children: [
+                                              Text('Hospitals',
+                                                  style: TextStyle(fontSize: 16)),
+                                              SizedBox(
+                                                  height:
+                                                      5), // Spacing between text elements
+                                              Text('only seat booking',
+                                                  style: TextStyle(fontSize: 12)),
+                                            ],
                                           ),
-                                        ),
-                                      ],
+                                          // Right side: Image widget
+                                          Flexible(
+                                            child: Container(
+                                              margin: const EdgeInsets.only(
+                                                  left:
+                                                      10), // Margin between text and image
+                                              height:
+                                                  120, // Set desired height for the image
+                                              // Set desired width for the image
+                                              child: Image.asset(
+                                                  'assets/hospitals.png'),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -193,12 +203,14 @@ class _HomescreenState extends State<Homescreen> {
                                               .start, // Align text to start (left)
                                           children: [
                                             Text('Blood Bank',
-                                                style: TextStyle(fontSize: 16)),
+                                                style:
+                                                    TextStyle(fontSize: 16)),
                                             SizedBox(
                                                 height:
                                                     5), // Spacing between text elements
                                             Text('Request blood',
-                                                style: TextStyle(fontSize: 12)),
+                                                style:
+                                                    TextStyle(fontSize: 12)),
                                           ],
                                         ),
                                         // Right side: Image widget
@@ -226,7 +238,7 @@ class _HomescreenState extends State<Homescreen> {
                     ),
                   ),
                   const SizedBox(height: 20),
-               //  Image.network('http://192.168.0.100:8000/video_feed'),
+                  //  Image.network('http://192.168.0.100:8000/video_feed'),
                   //feature doctors
                   Row(
                     children: [
