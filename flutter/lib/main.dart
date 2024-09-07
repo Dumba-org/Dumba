@@ -1,8 +1,30 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/main_screen.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  if (kIsWeb) {
+    await Firebase.initializeApp(
+        options: const FirebaseOptions(
+            apiKey: "AIzaSyABjw8br_EPCfVM7BpYf2FmwQhBpFgCdK4",
+            authDomain: "doctor-app-8ecc3.firebaseapp.com",
+            projectId: "doctor-app-8ecc3",
+            storageBucket: "doctor-app-8ecc3.appspot.com",
+            messagingSenderId: "493048497325",
+            appId: "1:493048497325:web:e4e4db016a639e6cd5b224"));
+  } else {
+    await Firebase.initializeApp(
+        options: const FirebaseOptions(
+            apiKey: "AIzaSyABjw8br_EPCfVM7BpYf2FmwQhBpFgCdK4",
+            authDomain: "doctor-app-8ecc3.firebaseapp.com",
+            projectId: "doctor-app-8ecc3",
+            storageBucket: "doctor-app-8ecc3.appspot.com",
+            messagingSenderId: "493048497325",
+            appId: "1:493048497325:web:e4e4db016a639e6cd5b224"));
+  }
   runApp(const MyApp());
 }
 
