@@ -3,6 +3,7 @@ import 'package:rekhdekh/screens/appointment.dart';
 import 'package:rekhdekh/screens/articles.dart';
 import 'package:rekhdekh/screens/chatScreen.dart';
 import 'package:rekhdekh/screens/homescreen.dart';
+import 'package:rekhdekh/screens/servicescreen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -17,8 +18,8 @@ class _MainScreenState extends State<MainScreen> {
     const Homescreen(),
     const ArticleScreen(),
     Oppointment(0),
-    Container(),
-    MessagesScreen(),
+    ServiceListPage(),
+    const MessagesScreen(),
   ];
   @override
   Widget build(BuildContext context) {

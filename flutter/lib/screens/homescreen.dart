@@ -9,13 +9,13 @@ class Homescreen extends StatefulWidget {
 }
 
 class _HomescreenState extends State<Homescreen> {
-  final catNames = ['brain', 'heart', 'lungs', 'kidney', 'ear'];
+  final catNames = ['brain', 'heart', 'lungs', 'kidney', 'tooth'];
   final catImages = [
-    'assets/hospitals.png',
-    'assets/hospitals.png',
-    'assets/hospitals.png',
-    'assets/hospitals.png',
-    'assets/hospitals.png',
+    'assets/images/brain.png',
+    'assets/images/heart.png',
+    'assets/images/lungs.png',
+    'assets/images/kidney.png',
+    'assets/images/tooth.png',
   ];
   final docImg = [
     'assets/doctor.png',
