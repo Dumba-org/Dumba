@@ -54,7 +54,7 @@ class _HomescreenState extends State<Homescreen> {
                   //search bar
 
                   Container(
-                    height: 47,
+                    height: 40,
                     width: MediaQuery.of(context).size.width,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(

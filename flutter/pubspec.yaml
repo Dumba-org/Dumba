@@ -44,6 +44,7 @@ dependencies:
   material_design_icons_flutter: ^7.0.7296
   smooth_page_indicator: ^1.2.0+3
   syncfusion_flutter_datepicker: ^20.3.60
+  url_launcher: ^6.3.0
 
 
 dev_dependencies:
@@ -72,6 +73,7 @@ flutter:
   assets:
      
     - assets/images/
+    - assets/hospitals/
     - assets/hospitals.png
 
   # An image asset can refer to one or more resolution-specific "variants", see

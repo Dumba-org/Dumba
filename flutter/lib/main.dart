@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:rekhdekh/screens/splashscreen.dart';
 
 import 'screens/main_screen.dart';
 
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const MainScreen(),
+      home:  SplashScreen(),
     );
   }
 }

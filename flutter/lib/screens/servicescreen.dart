@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:rekhdekh/widgets/color.dart';
 
+import 'find_hospital.dart';
+
 class ServiceListPage extends StatelessWidget {
   final List<Map<String, dynamic>> services = [
     {
@@ -123,6 +125,12 @@ class NearbyHospitalPage extends StatelessWidget {
           ElevatedButton.icon(
             onPressed: () {
               // Implement location-based hospital search
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => HospitalList(),
+                ),
+              );
             },
             icon: Icon(Icons.location_on),
             label: Text('Find Hospitals'),
