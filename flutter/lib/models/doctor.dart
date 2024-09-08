@@ -8,8 +8,8 @@ class Doctor {
 }
 
 List<Doctor> doctors = [
-  Doctor('Dr Ram Sherpa', 'Heart Specialist', 'Rs 500/hour', 'assets/hospitals.png'),
-  Doctor('Dr Sita Rai', 'Orthopedic Specialist', 'Rs 600/hour', 'assets/orthopedics.png'),
-  Doctor('Dr John Doe', 'Dermatologist', 'Rs 700/hour', 'assets/dermatologist.png'),
-  Doctor('Dr Jane Smith', 'Pediatrician', 'Rs 550/hour', 'assets/pediatrician.png'),
+  Doctor('Dr Ram Sherpa', 'Heart Specialist', 'Rs 500/hour', 'assets/images/doc1.png'),
+  Doctor('Dr Sita Rai', 'Orthopedic Specialist', 'Rs 600/hour', 'assets/images/doc2.png'),
+  Doctor('Dr John Doe', 'Dermatologist', 'Rs 700/hour', 'assets/images/doc4.png'),
+  Doctor('Dr Jane Smith', 'Pediatrician', 'Rs 550/hour', 'assets/images/doc3.png'),
 ];

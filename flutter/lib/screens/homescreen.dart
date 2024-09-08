@@ -109,7 +109,7 @@ class _HomescreenState extends State<Homescreen> {
                                 Flexible(
                                   child: Align(
                                       alignment: Alignment.center,
-                                      child: Image.asset('assets/hospitals.png',
+                                      child: Image.asset('assets/images/doc6.png',
                                           height: 150)),
                                 ),
                               ],
