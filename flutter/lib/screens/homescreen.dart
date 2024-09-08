@@ -278,7 +278,7 @@ class _HomescreenState extends State<Homescreen> {
                   SizedBox(
                     height: 200,
                     child: ListView.builder(
-                      itemCount: 5,
+                      itemCount: 4,
                       shrinkWrap: true,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
@@ -287,7 +287,8 @@ class _HomescreenState extends State<Homescreen> {
                               8), // Added margin for spacing
                           child: Card(
                             elevation: 3,
-                            child: Padding(
+                            child: Container(
+                              width: 150,
                               padding: const EdgeInsets.all(8.0),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
