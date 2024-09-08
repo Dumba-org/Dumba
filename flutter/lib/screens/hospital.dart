@@ -76,7 +76,7 @@ class HospitalCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: const Color.fromARGB(255, 137, 230, 140),
+      color: const Color.fromARGB(255, 128, 238, 196),
       elevation: 4.0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       child: Column(
@@ -100,7 +100,7 @@ class HospitalCard extends StatelessWidget {
               name,
               textAlign: TextAlign.center,
               style: const TextStyle(
-                fontSize: 16.0,
+                fontSize: 10,
                 fontWeight: FontWeight.bold,
               ),
             ),

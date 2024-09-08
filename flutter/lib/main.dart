@@ -3,6 +3,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:rekhdekh/screens/splashscreen.dart';
 
+import 'screens/appointment/appointment_screen.dart';
+import 'screens/blood donation/blood_donation.dart';
 import 'screens/main_screen.dart';
 
 void main() async {
@@ -43,7 +45,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home:  SplashScreen(),
+      home:   SplashScreen(),
     );
   }
 }

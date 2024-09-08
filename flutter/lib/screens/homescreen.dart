@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rekhdekh/screens/blood%20donation/blood_donation.dart';
 import 'package:rekhdekh/screens/hospital.dart';
 import 'package:rekhdekh/widgets/color.dart';
 
@@ -120,13 +121,14 @@ class _HomescreenState extends State<Homescreen> {
                           children: [
                             Expanded(
                               child: GestureDetector(
-                                  onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => HospitalGridScreen()),
-                                );
-                              },
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            HospitalGridScreen()),
+                                  );
+                                },
                                 child: Container(
                                   width: 180,
                                   height:
@@ -150,12 +152,14 @@ class _HomescreenState extends State<Homescreen> {
                                                 .start, // Align text to start (left)
                                             children: [
                                               Text('Hospitals',
-                                                  style: TextStyle(fontSize: 16)),
+                                                  style:
+                                                      TextStyle(fontSize: 16)),
                                               SizedBox(
                                                   height:
                                                       5), // Spacing between text elements
                                               Text('only seat booking',
-                                                  style: TextStyle(fontSize: 12)),
+                                                  style:
+                                                      TextStyle(fontSize: 12)),
                                             ],
                                           ),
                                           // Right side: Image widget
@@ -196,22 +200,33 @@ class _HomescreenState extends State<Homescreen> {
                                           .center, // Center vertically
                                       children: [
                                         // Left side: Text widgets
-                                        const Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          crossAxisAlignment: CrossAxisAlignment
-                                              .start, // Align text to start (left)
-                                          children: [
-                                            Text('Blood Bank',
-                                                style:
-                                                    TextStyle(fontSize: 16)),
-                                            SizedBox(
-                                                height:
-                                                    5), // Spacing between text elements
-                                            Text('Request blood',
-                                                style:
-                                                    TextStyle(fontSize: 12)),
-                                          ],
+                                        GestureDetector(
+                                          onTap: () {
+                                            // Navigate to blood bank screen
+                                            Navigator.of(context)
+                                                .pushReplacement(
+                                                    MaterialPageRoute(
+                                              builder: (context) =>
+                                                  const BloodBankPage(), // Replace with your main screen widget
+                                            ));
+                                          },
+                                          child: const Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            crossAxisAlignment: CrossAxisAlignment
+                                                .start, // Align text to start (left)
+                                            children: [
+                                              Text('Blood Bank',
+                                                  style:
+                                                      TextStyle(fontSize: 16)),
+                                              SizedBox(
+                                                  height:
+                                                      5), // Spacing between text elements
+                                              Text('Request blood',
+                                                  style:
+                                                      TextStyle(fontSize: 12)),
+                                            ],
+                                          ),
                                         ),
                                         // Right side: Image widget
                                         Flexible(
@@ -312,7 +327,7 @@ class _HomescreenState extends State<Homescreen> {
                   const Text('Find Your Services',
                       style: TextStyle(fontSize: 20, color: Colors.black)),
 
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
 
                   //GridView for services which contain image and text
                   SizedBox(
@@ -329,6 +344,7 @@ class _HomescreenState extends State<Homescreen> {
                       ),
                       itemBuilder: (context, index) {
                         return Card(
+                          
                           elevation: 3,
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
@@ -337,7 +353,7 @@ class _HomescreenState extends State<Homescreen> {
                               children: [
                                 // CircleAvatar for the image
                                 CircleAvatar(
-                                  radius: 10, // Adjust the size of the avatar
+                                  radius: 15, // Adjust the size of the avatar
                                   backgroundImage: AssetImage(catImages[index]),
                                 ),
                                 const SizedBox(

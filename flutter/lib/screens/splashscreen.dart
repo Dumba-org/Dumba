@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../widgets/color.dart';
 import 'main_screen.dart';
 
 
@@ -37,8 +38,8 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             const Text("Your Home Doctor", style: TextStyle(fontSize: 12, color: Colors.grey)),  // App name
             const SizedBox(height: 20),
-            const CircularProgressIndicator(
-              color: Colors.white,  // Loading indicator
+             CircularProgressIndicator(
+              color:primaryColor,  // Loading indicator
             ),
           ],
         ),

@@ -5,6 +5,8 @@ import 'package:rekhdekh/screens/chatScreen.dart';
 import 'package:rekhdekh/screens/homescreen.dart';
 import 'package:rekhdekh/screens/servicescreen.dart';
 
+import 'appointment/appointment_screen.dart';
+
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -17,7 +19,7 @@ class _MainScreenState extends State<MainScreen> {
   final _screens = [
     const Homescreen(),
     const ArticleScreen(),
-    Oppointment(0),
+    const AppointmentBookingPage(),
     ServiceListPage(),
     const MessagesScreen(),
   ];
