@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:rekhdekh/screens/appointment.dart';
 import 'package:rekhdekh/screens/articles.dart';
 import 'package:rekhdekh/screens/chatScreen.dart';
 import 'package:rekhdekh/screens/homescreen.dart';
