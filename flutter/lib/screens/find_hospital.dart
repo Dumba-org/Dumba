@@ -128,7 +128,7 @@ class _HospitalListState extends State<HospitalList> {
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.vertical(top: Radius.circular(15)),
-                    child: Image.network(
+                    child: Image.asset(
                       hospital['image'],
                       height: 180,
                       width: double.infinity,

@@ -19,7 +19,7 @@ class HospitalAvailability extends StatelessWidget {
             child: Expanded(
               child: Column(
                 children: [
-                  Image.network('assets/hospitals.png'),
+                  Image.asset('assets/hospitals/bir.jpg'),
                   const Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Text(
