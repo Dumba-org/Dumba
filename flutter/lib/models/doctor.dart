@@ -1,0 +1,15 @@
+class Doctor {
+  final String name;
+  final String specialty;
+  final String price;
+  final String imageUrl;
+
+  Doctor(this.name, this.specialty, this.price, this.imageUrl);
+}
+
+List<Doctor> doctors = [
+  Doctor('Dr Ram Sherpa', 'Heart Specialist', 'Rs 500/hour', 'assets/hospitals.png'),
+  Doctor('Dr Sita Rai', 'Orthopedic Specialist', 'Rs 600/hour', 'assets/orthopedics.png'),
+  Doctor('Dr John Doe', 'Dermatologist', 'Rs 700/hour', 'assets/dermatologist.png'),
+  Doctor('Dr Jane Smith', 'Pediatrician', 'Rs 550/hour', 'assets/pediatrician.png'),
+];

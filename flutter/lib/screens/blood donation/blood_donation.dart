@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rekhdekh/screens/homescreen.dart';
+import 'package:rekhdekh/screens/thank%20you/thankyou.dart';
 import 'package:rekhdekh/widgets/color.dart';
 
 class BloodBankPage extends StatefulWidget {
@@ -112,6 +113,10 @@ class BloodRequestForm extends StatelessWidget {
           child: ElevatedButton(
             onPressed: () {
               // Submit logic here
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                builder: (context) =>
+                    const ThankYouPage(), // Replace with your main screen widget
+              ));
             },
             child: const Text(
               'Submit',
@@ -153,6 +158,10 @@ class BloodDonationForm extends StatelessWidget {
           child: ElevatedButton(
             onPressed: () {
               // Submit donation logic here
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                builder: (context) =>
+                    const ThankYouPage(), // Replace with your main screen widget
+              ));
             },
             child: const Text('Submit'),
             style: ElevatedButton.styleFrom(

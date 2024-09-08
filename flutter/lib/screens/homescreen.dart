@@ -3,6 +3,8 @@ import 'package:rekhdekh/screens/blood%20donation/blood_donation.dart';
 import 'package:rekhdekh/screens/hospital.dart';
 import 'package:rekhdekh/widgets/color.dart';
 
+import '../models/doctor.dart';
+
 class Homescreen extends StatefulWidget {
   const Homescreen({super.key});
 
@@ -291,28 +293,28 @@ class _HomescreenState extends State<Homescreen> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   // CircleAvatar for the image
-                                  const CircleAvatar(
+                                  CircleAvatar(
                                     radius: 30, // Adjust the size of the avatar
                                     backgroundImage:
-                                        AssetImage('assets/hospitals.png'),
+                                        AssetImage(doctors[index].imageUrl),
                                   ),
                                   const SizedBox(
                                       height:
                                           10), // Spacing between image and text
-                                  const Text(
-                                    'Dr Ram Sherpa',
-                                    style: TextStyle(
+                                   Text(
+                                    doctors[index].name,
+                                    style: const TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 14),
                                   ),
                                   Text(
-                                    'Heart Specialist',
+                                   doctors[index].specialty,
                                     style: TextStyle(
                                         color: Colors.grey[600], fontSize: 12),
                                   ),
-                                  const Text(
-                                    'Rs 500/hour',
-                                    style: TextStyle(
+                                   Text(
+                                    doctors[index].price,
+                                    style: const TextStyle(
                                         color: Colors.green, fontSize: 12),
                                   ),
                                 ],

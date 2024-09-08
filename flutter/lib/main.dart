@@ -6,6 +6,7 @@ import 'package:rekhdekh/screens/splashscreen.dart';
 import 'screens/appointment/appointment_screen.dart';
 import 'screens/blood donation/blood_donation.dart';
 import 'screens/main_screen.dart';
+import 'screens/thank you/thankyou.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home:   SplashScreen(),
+      home:    SplashScreen(),
     );
   }
 }
