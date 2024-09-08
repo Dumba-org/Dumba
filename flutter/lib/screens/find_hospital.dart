@@ -13,7 +13,7 @@ class _HospitalListState extends State<HospitalList> {
       'address': 'National Hospital of Nepal',
       'lat': 27.705235,
       'lng': 85.313276,
-      'image': 'https://www.example.com/image1.jpg', // Replace with actual image URL
+      'image': 'assets/hospitals/bir.jpg', // Replace with actual image URL
       'rating': 4.3
     },
     {
@@ -21,7 +21,7 @@ class _HospitalListState extends State<HospitalList> {
       'address': 'Maharajgunj, Kathmandu',
       'lat': 27.736916,
       'lng': 85.329840,
-      'image': 'https://www.example.com/image2.jpg', // Replace with actual image URL
+      'image': 'assets/hospitals/teaching.jpg', // Replace with actual image URL
       'rating': 4.7
     },
     {
@@ -29,7 +29,7 @@ class _HospitalListState extends State<HospitalList> {
       'address': 'Patan, Kathmandu',
       'lat': 27.667516,
       'lng': 85.324763,
-      'image': 'https://www.example.com/image3.jpg', // Replace with actual image URL
+      'image': 'assets/hospitals/patan.jpg', // Replace with actual image URL
       'rating': 4.2
     },
     // Add more hospitals here...

@@ -189,7 +189,7 @@ class AmbulanceTrackingPage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Image.asset('assets/images/ambulance.png', height: 200, fit: BoxFit.cover),
+          Image.asset('assets/images/ambulance.jpg', height: 200, fit: BoxFit.cover),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(

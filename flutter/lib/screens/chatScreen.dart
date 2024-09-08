@@ -320,8 +320,8 @@ class VideoMessage extends StatelessWidget {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
-              child: Image.network(
-                  "https://i.postimg.cc/Ls1WtygL/Video-Place-Here.png"),
+              child: Image.asset(
+                  "assets/images/errorex.png"),
             ),
             Container(
               height: 25,
@@ -494,44 +494,44 @@ class ChatMessage {
 
 List demeChatMessages = [
   ChatMessage(
-    text: "Hi Sajol,",
+    text: "Hello?",
+    messageType: ChatMessageType.text,
+    messageStatus: MessageStatus.viewed,
+    isSender: true,
+  ),
+  ChatMessage(
+    text: "Hello, how can I help you?",
     messageType: ChatMessageType.text,
     messageStatus: MessageStatus.viewed,
     isSender: false,
   ),
   ChatMessage(
-    text: "Hello, How are you?",
+    text: "I am unable to locate nearby clinics",
     messageType: ChatMessageType.text,
     messageStatus: MessageStatus.viewed,
     isSender: true,
+  ),
+  ChatMessage(
+    text: "Can you describe in more detail.",
+    messageType: ChatMessageType.text,
+    messageStatus: MessageStatus.viewed,
+    isSender: false,
   ),
   ChatMessage(
     text: "",
     messageType: ChatMessageType.audio,
     messageStatus: MessageStatus.viewed,
+    isSender: true,
+  ),
+  ChatMessage(
+    text: "Could you send an image or video of issue",
+    messageType: ChatMessageType.text,
+    messageStatus: MessageStatus.notView,
     isSender: false,
   ),
   ChatMessage(
     text: "",
     messageType: ChatMessageType.video,
-    messageStatus: MessageStatus.viewed,
-    isSender: true,
-  ),
-  ChatMessage(
-    text: "Error happend",
-    messageType: ChatMessageType.text,
-    messageStatus: MessageStatus.notSent,
-    isSender: true,
-  ),
-  ChatMessage(
-    text: "Please send health related image!!",
-    messageType: ChatMessageType.text,
-    messageStatus: MessageStatus.viewed,
-    isSender: false,
-  ),
-  ChatMessage(
-    text: "Glad you like it",
-    messageType: ChatMessageType.text,
     messageStatus: MessageStatus.notView,
     isSender: true,
   ),
