@@ -33,9 +33,14 @@ class _HomescreenState extends State<Homescreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('RekhDekh', style: TextStyle(color: Colors.green)),
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.menu),
+        leading: const Padding(
+          padding: EdgeInsets.only(left: 10),
+          child: CircleAvatar(
+            radius: 20,
+            backgroundImage: AssetImage(
+              'assets/images/doc1.png',
+            ),
+          ),
         ),
         actions: [
           IconButton(
@@ -104,12 +109,19 @@ class _HomescreenState extends State<Homescreen> {
                                 ),
                                 const Text('Video Consultation',
                                     style: TextStyle(fontSize: 20)),
-                                const Text('Verified doctors',
-                                    style: TextStyle(fontSize: 14)),
+                                const Padding(
+                                  padding: EdgeInsets.only(left: 10),
+                                  child: Align(
+                                    alignment: Alignment.topLeft,
+                                    child: Text('Verified doctors',
+                                        style: TextStyle(fontSize: 14)),
+                                  ),
+                                ),
                                 Flexible(
                                   child: Align(
                                       alignment: Alignment.center,
-                                      child: Image.asset('assets/images/doc6.png',
+                                      child: Image.asset(
+                                          'assets/images/doc6.png',
                                           height: 150)),
                                 ),
                               ],
@@ -302,18 +314,18 @@ class _HomescreenState extends State<Homescreen> {
                                   const SizedBox(
                                       height:
                                           10), // Spacing between image and text
-                                   Text(
+                                  Text(
                                     doctors[index].name,
                                     style: const TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 14),
                                   ),
                                   Text(
-                                   doctors[index].specialty,
+                                    doctors[index].specialty,
                                     style: TextStyle(
                                         color: Colors.grey[600], fontSize: 12),
                                   ),
-                                   Text(
+                                  Text(
                                     doctors[index].price,
                                     style: const TextStyle(
                                         color: Colors.green, fontSize: 12),
@@ -347,7 +359,6 @@ class _HomescreenState extends State<Homescreen> {
                       ),
                       itemBuilder: (context, index) {
                         return Card(
-                          
                           elevation: 3,
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
